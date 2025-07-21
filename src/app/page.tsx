@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Header from '@/components/Header'
+import NavigationMenu from '@/components/NavigationMenu'
 import HeroSection from '@/components/HeroSection'
 import ServicesSection from '@/components/ServicesSection'
 import AboutSection from '@/components/AboutSection'
@@ -19,14 +19,17 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <Header />
-      <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <PackagesSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <CaseStudySection />
+      <NavigationMenu />
+      {/* Add top spacing to account for fixed header */}
+      <div className="pt-24 md:pt-28">
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        <PackagesSection />
+        <PortfolioSection />
+        <TestimonialsSection />
+        <CaseStudySection />
+      </div>
       <Footer />
     </motion.main>
   )
