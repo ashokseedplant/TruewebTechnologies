@@ -33,7 +33,7 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
               alt="TrueWeb Technologies" 
               width={223} 
               height={81}
-              className="h-12 w-auto"
+              className="h-12 w-auto dark:brightness-0 dark:invert"
               priority
             />
           </Link>
@@ -72,13 +72,13 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
                         </a>
                       </NavigationMenuLink>
                     </li>
-                    <ListItem href="/about-us/" title="About Us">
+                    <ListItem href="/about-us/" title="About Us" icon="info">
                       Learn about our company and mission
                     </ListItem>
-                    <ListItem href="/portfolios/" title="Portfolio">
+                    <ListItem href="/portfolios/" title="Portfolio" icon="briefcase">
                       View our successful projects
                     </ListItem>
-                    <ListItem href="/seo-casestudy/" title="SEO Case Study">
+                    <ListItem href="/seo-casestudy/" title="SEO Case Study" icon="bar-chart">
                       See our SEO success stories
                     </ListItem>
                   </ul>
@@ -92,67 +92,67 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
                   <ul className="grid w-[600px] gap-3 p-6 md:w-[700px] md:grid-cols-3 lg:w-[800px]">
                     <div>
                       <h4 className="text-sm font-medium text-primary mb-3">Digital Marketing</h4>
-                      <ListItem href="/digital-marketing/" title="Digital Marketing">
+                      <ListItem href="/digital-marketing/" title="Digital Marketing" icon="megaphone">
                         Complete digital marketing solutions
                       </ListItem>
-                      <ListItem href="/content-marketing/" title="Content Marketing">
+                      <ListItem href="/content-marketing/" title="Content Marketing" icon="file-text">
                         Engaging content strategies
                       </ListItem>
-                      <ListItem href="/email-marketing/" title="Email Marketing">
+                      <ListItem href="/email-marketing/" title="Email Marketing" icon="mail">
                         Effective email campaigns
                       </ListItem>
-                      <ListItem href="/seo/" title="SEO">
+                      <ListItem href="/seo/" title="SEO" icon="search">
                         Search engine optimization
                       </ListItem>
-                      <ListItem href="/smo/" title="SMO">
+                      <ListItem href="/smo/" title="SMO" icon="users">
                         Social media optimization
                       </ListItem>
-                      <ListItem href="/ppc/" title="PPC">
+                      <ListItem href="/ppc/" title="PPC" icon="dollar-sign">
                         Pay-per-click advertising
                       </ListItem>
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-primary mb-3">Web Designing</h4>
-                      <ListItem href="/web-designing/" title="Web Designing">
+                      <ListItem href="/web-designing/" title="Web Designing" icon="layout">
                         Creative web design solutions
                       </ListItem>
-                      <ListItem href="/graphic-design/" title="Graphic Design">
+                      <ListItem href="/graphic-design/" title="Graphic Design" icon="image">
                         Professional graphic design
                       </ListItem>
-                      <ListItem href="/logo-design/" title="Logo Design">
+                      <ListItem href="/logo-design/" title="Logo Design" icon="award">
                         Custom logo design
                       </ListItem>
-                      <ListItem href="/mobile-website-design/" title="Mobile Website Design">
+                      <ListItem href="/mobile-website-design/" title="Mobile Website Design" icon="smartphone">
                         Mobile-friendly designs
                       </ListItem>
-                      <ListItem href="/responsive-website-design/" title="Responsive Web Design">
+                      <ListItem href="/responsive-website-design/" title="Responsive Web Design" icon="monitor">
                         Responsive design solutions
                       </ListItem>
-                      <ListItem href="/web-page-design/" title="Web Page Design">
+                      <ListItem href="/web-page-design/" title="Web Page Design" icon="file">
                         Custom web page design
                       </ListItem>
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-primary mb-3">Development & More</h4>
-                      <ListItem href="/web-development/" title="Web Development">
+                      <ListItem href="/web-development/" title="Web Development" icon="code">
                         Custom web development
                       </ListItem>
-                      <ListItem href="/php-development/" title="PHP Development">
+                      <ListItem href="/php-development/" title="PHP Development" icon="terminal">
                         PHP web applications
                       </ListItem>
-                      <ListItem href="/wordpress-development/" title="WordPress Development">
+                      <ListItem href="/wordpress-development/" title="WordPress Development" icon="wordpress">
                         WordPress websites
                       </ListItem>
-                      <ListItem href="/magento-development/" title="Magento Development">
+                      <ListItem href="/magento-development/" title="Magento Development" icon="shopping-cart">
                         E-commerce with Magento
                       </ListItem>
-                      <ListItem href="/e-commerce-website/" title="E-commerce Website">
+                      <ListItem href="/e-commerce-website/" title="E-commerce Website" icon="shopping-bag">
                         Online store development
                       </ListItem>
-                      <ListItem href="/dot-net-development/" title=".NET Development">
+                      <ListItem href="/dot-net-development/" title=".NET Development" icon="cpu">
                         Microsoft .NET solutions
                       </ListItem>
-                      <ListItem href="/static-website-development/" title="Static Web Development">
+                      <ListItem href="/static-website-development/" title="Static Web Development" icon="file-code">
                         Fast static websites
                       </ListItem>
                     </div>
@@ -262,22 +262,82 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
   )
 }
 
+import {
+  Info,
+  Briefcase,
+  BarChart,
+  Megaphone,
+  FileText,
+  Mail,
+  Search,
+  Users,
+  DollarSign,
+  Layout,
+  Image as ImageIcon,
+  Award,
+  Smartphone,
+  Monitor,
+  File,
+  Code,
+  Terminal,
+  WordPress,
+  ShoppingCart,
+  ShoppingBag,
+  Cpu,
+  FileCode
+} from "lucide-react"
+
+const iconMap: Record<string, React.ElementType> = {
+  info: Info,
+  briefcase: Briefcase,
+  "bar-chart": BarChart,
+  megaphone: Megaphone,
+  "file-text": FileText,
+  mail: Mail,
+  search: Search,
+  users: Users,
+  "dollar-sign": DollarSign,
+  layout: Layout,
+  image: ImageIcon,
+  award: Award,
+  smartphone: Smartphone,
+  monitor: Monitor,
+  file: File,
+  code: Code,
+  terminal: Terminal,
+  wordpress: WordPress,
+  "shopping-cart": ShoppingCart,
+  "shopping-bag": ShoppingBag,
+  cpu: Cpu,
+  "file-code": FileCode
+}
+
+interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
+  title: string
+  icon?: string
+  children: React.ReactNode
+}
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  ListItemProps
+>(({ className, title, icon, children, ...props }, ref) => {
+  const IconComponent = icon ? iconMap[icon] : null
   return (
     <li>
       <NavigationMenuLink asChild>
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-start gap-2",
             className
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="flex items-center gap-2">
+            {IconComponent && <IconComponent size={16} className="text-primary shrink-0" />}
+            <span className="text-sm font-medium leading-none">{title}</span>
+          </div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
