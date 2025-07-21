@@ -5,7 +5,7 @@ import { Phone, Mail, Facebook, Twitter, Linkedin, MessageSquare } from 'lucide-
 
 const TopHeader = () => {
   return (
-    <div className="bg-gray-800 text-white py-2 hidden md:block">
+    <div className="bg-gray-800 dark:bg-gray-900 text-white py-2 hidden md:block">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-6">
@@ -30,6 +30,7 @@ const TopHeader = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-primary transition-colors"
+              aria-label="Facebook"
             >
               <Facebook size={18} />
             </a>
@@ -38,6 +39,7 @@ const TopHeader = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-primary transition-colors"
+              aria-label="Twitter"
             >
               <Twitter size={18} />
             </a>
@@ -46,6 +48,7 @@ const TopHeader = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-primary transition-colors"
+              aria-label="LinkedIn"
             >
               <Linkedin size={18} />
             </a>
@@ -54,6 +57,7 @@ const TopHeader = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-primary transition-colors"
+              aria-label="Skype"
             >
               <MessageSquare size={18} />
             </a>
