@@ -6,10 +6,10 @@ import HeroSection from '@/components/HeroSection'
 import ServicesSection from '@/components/ServicesSection'
 import AboutSection from '@/components/AboutSection'
 import PackagesSection from '@/components/PackagesSection'
-// import Portfolio from '@/components/Portfolio'
-// import Testimonials from '@/components/Testimonials'
-// import CaseStudy from '@/components/CaseStudy'
-// import Footer from '@/components/Footer'
+import PortfolioSection from '@/components/PortfolioSection'
+import TestimonialsSection from '@/components/TestimonialsSection'
+import CaseStudySection from '@/components/CaseStudySection'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -24,10 +24,10 @@ export default function Home() {
       <ServicesSection />
       <AboutSection />
       <PackagesSection />
-      {/* <Portfolio />
-      <Testimonials />
-      <CaseStudy />
-      <Footer /> */}
+      <PortfolioSection />
+      <TestimonialsSection />
+      <CaseStudySection />
+      <Footer />
     </motion.main>
   )
 }
