@@ -18,7 +18,7 @@ export default function DigitalMarketingPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/digital-marketing-hero.jpg"
+            src="/images/digital-marketing-hero.png"
             alt="Digital Marketing Hero Background"
             fill
             className="object-cover"
@@ -200,7 +200,7 @@ export default function DigitalMarketingPage() {
             {/* Right Image */}
             <div>
               <Image
-                src="/images/digital-marketing-process.jpg"
+                src="/images/digital-marketing-process.png"
                 alt="Digital Marketing Process"
                 width={557}
                 height={634}
