@@ -1,6 +1,7 @@
 import { generateMetadata } from "@/components/SEO"
 import type { Metadata } from "next"
 import Link from "next/link"
+import { Breadcrumb } from "@/components/ui/Breadcrumb"
 
 export const metadata: Metadata = generateMetadata({
   title: "Get Free Quote | Request Custom Digital Marketing Solutions",
@@ -16,17 +17,16 @@ export default function GetQuotePage() {
       <section className="py-16 pt-24 md:pt-32 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
-            <nav className="mb-6">
-              <ol className="flex items-center justify-center space-x-2 text-sm">
-                <li>
-                  <Link href="/" className="text-white hover:text-blue-200 transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li className="text-white">&gt;</li>
-                <li className="text-white font-semibold">Get Quote</li>
-              </ol>
-            </nav>
+            {/* Center the breadcrumb */}
+            <div className="flex justify-center mb-6">
+              <Breadcrumb 
+                items={[
+                  { label: "Home", href: "/" },
+                  { label: "Get Quote" }
+                ]}
+                variant="dark"
+              />
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Get Your Free Quote
             </h1>

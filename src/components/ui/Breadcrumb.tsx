@@ -27,7 +27,7 @@ export function Breadcrumb({
     : 'hover:text-blue-200'
 
   return (
-    <nav className={`mb-6 ${className}`} aria-label="Breadcrumb">
+    <nav className={`mb-6 flex justify-center ${className}`} aria-label="Breadcrumb">
       <ol className="flex items-center flex-wrap space-x-2 text-sm">
         {items.map((item, index) => (
           <React.Fragment key={index}>
