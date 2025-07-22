@@ -12,7 +12,7 @@ export const metadata: Metadata = generateMetadata({
 export default function SEOCaseStudyPage() {
   return (
     <div className="bg-white dark:bg-gray-950">
-      <main className="container mx-auto py-12 px-4">
+      <main className="container mx-auto pt-24 md:pt-32 pb-12 px-4">
         <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">SEO Case Studies</h1>
         
         <p className="text-lg mb-8 text-gray-700 dark:text-gray-300">

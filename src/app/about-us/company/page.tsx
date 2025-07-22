@@ -26,7 +26,7 @@ export default function CompanyPage() {
   return (
     <div className="bg-white dark:bg-gray-950">
       {/* Hero Section */}
-      <section className="relative py-16 bg-blue-50 dark:bg-gray-900">
+      <section className="relative pt-24 md:pt-32 pb-16 bg-blue-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center">
             <div className="mb-6">

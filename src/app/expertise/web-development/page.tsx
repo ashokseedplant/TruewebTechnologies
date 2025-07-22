@@ -10,7 +10,7 @@ export const metadata: Metadata = generateMetadata({
 
 export default function WebDevelopmentPage() {
   return (
-    <main className="container mx-auto py-12">
+    <main className="container mx-auto pt-24 md:pt-32 pb-12">
       <h1 className="text-4xl font-bold mb-6">Web Development Services</h1>
       
       <section className="mb-8">
