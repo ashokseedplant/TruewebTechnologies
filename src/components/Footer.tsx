@@ -34,7 +34,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-[url('/images/footer-bg.jpg')] bg-cover bg-center bg-no-repeat bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-12 bg-[url('/images/footer-bg.jpg')] bg-cover bg-center dark:border-t dark:border-gray-800">
       <div className="container mx-auto px-4">
         {/* Quick Links Row */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-10">
@@ -155,17 +155,29 @@ const Footer = () => {
           
           {/* Payment Options */}
           <div>
-            <h5 className="text-xl font-semibold mb-4 text-white">RESOURCES</h5>
+            <h5 className="text-xl font-semibold mb-4 text-white">PAYMENT METHODS</h5>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <ul className="space-y-4 text-gray-200">
               <li>
-                <Link href="/make-payment">
-                  <Image src="/images/payment/paypal.png" alt="PayPal" width={150} height={50} className="bg-white p-2 rounded" />
+                <Link href="/make-payment" className="block">
+                  <Image 
+                    src="/images/payment/paypal.png" 
+                    alt="PayPal" 
+                    width={150} 
+                    height={50}
+                    className="bg-white p-2 rounded hover:opacity-90 transition-opacity"
+                  />
                 </Link>
               </li>
               <li>
-                <Link href="/upi-payment">
-                  <Image src="/images/payment/upi.png" alt="UPI" width={150} height={50} className="bg-white p-2 rounded" />
+                <Link href="/upi-payment" className="block">
+                  <Image 
+                    src="/images/payment/upi.png" 
+                    alt="UPI" 
+                    width={150} 
+                    height={50}
+                    className="bg-white p-2 rounded hover:opacity-90 transition-opacity"
+                  />
                 </Link>
               </li>
             </ul>
@@ -188,19 +200,19 @@ const Footer = () => {
           
           <div className="flex justify-center gap-4 mb-6">
             <Link href="https://www.facebook.com/truewebtechnologies" target="_blank" rel="noopener noreferrer" 
-              className="bg-primary hover:bg-secondary transition-colors w-10 h-10 rounded-full flex items-center justify-center">
+              className="bg-primary hover:bg-secondary text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
               <Facebook size={20} />
             </Link>
             <Link href="https://twitter.com/TrueWebTechnol1" target="_blank" rel="noopener noreferrer"
-              className="bg-primary hover:bg-secondary transition-colors w-10 h-10 rounded-full flex items-center justify-center">
+              className="bg-primary hover:bg-secondary text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
               <Twitter size={20} />
             </Link>
             <Link href="https://www.linkedin.com/company/trueweb-technologies/" target="_blank" rel="noopener noreferrer"
-              className="bg-primary hover:bg-secondary transition-colors w-10 h-10 rounded-full flex items-center justify-center">
+              className="bg-primary hover:bg-secondary text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
               <Linkedin size={20} />
             </Link>
             <Link href="#" target="_blank" rel="noopener noreferrer"
-              className="bg-primary hover:bg-secondary transition-colors w-10 h-10 rounded-full flex items-center justify-center">
+              className="bg-primary hover:bg-secondary text-white transition-colors w-10 h-10 rounded-full flex items-center justify-center">
               <Youtube size={20} />
             </Link>
           </div>
