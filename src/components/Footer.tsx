@@ -43,10 +43,10 @@ const Footer = () => {
             <h5 className="text-xl font-semibold mb-4 text-white">Quick links</h5>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <ul className="space-y-3 text-gray-200">
-              <li><Link href="/about-us" className="text-gray-200 hover:text-primary transition-colors">- ABOUT US</Link></li>
-              <li><Link href="/our-expertise" className="text-gray-200 hover:text-primary transition-colors">- OUR EXPERTISE</Link></li>
-              <li><Link href="/our-package" className="text-gray-200 hover:text-primary transition-colors">- OUR PACKAGE</Link></li>
-              <li><Link href="/contact-us" className="text-gray-200 hover:text-primary transition-colors">- CONTACT US</Link></li>
+              <li><Link href="/about-us/company" className="text-gray-200 hover:text-primary transition-colors">- About Us</Link></li>
+              <li><Link href="/expertise" className="text-gray-200 hover:text-primary transition-colors">- Our Expertise</Link></li>
+              <li><Link href="/packages" className="text-gray-200 hover:text-primary transition-colors">- Our Packages</Link></li>
+              <li><Link href="/contact-us" className="text-gray-200 hover:text-primary transition-colors">- Contact Us</Link></li>
               <li><Link href="/refund-policy" className="text-gray-200 hover:text-primary transition-colors">- Refund Policy</Link></li>
             </ul>
           </div>
@@ -56,9 +56,9 @@ const Footer = () => {
             <h5 className="text-xl font-semibold mb-4 text-white">OUR SERVICES</h5>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <ul className="space-y-3 text-gray-200">
-              <li><Link href="/digital-marketing" className="text-gray-200 hover:text-primary transition-colors">- Digital Marketing</Link></li>
-              <li><Link href="/web-designing" className="text-gray-200 hover:text-primary transition-colors">- Web Designing</Link></li>
-              <li><Link href="/web-development" className="text-gray-200 hover:text-primary transition-colors">- Web Development</Link></li>
+              <li><Link href="/expertise/digital-marketing" className="text-gray-200 hover:text-primary transition-colors">- Digital Marketing</Link></li>
+              <li><Link href="/expertise/web-designing" className="text-gray-200 hover:text-primary transition-colors">- Web Designing</Link></li>
+              <li><Link href="/expertise/web-development" className="text-gray-200 hover:text-primary transition-colors">- Web Development</Link></li>
               <li><Link href="/other-services" className="text-gray-200 hover:text-primary transition-colors">- Other Services</Link></li>
             </ul>
           </div>
@@ -68,10 +68,10 @@ const Footer = () => {
             <h5 className="text-xl font-semibold mb-4 text-white">OUR PACKAGE</h5>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <ul className="space-y-3 text-gray-200">
-              <li><Link href="/aso-plan" className="text-gray-200 hover:text-primary transition-colors">- ASO Plan</Link></li>
-              <li><Link href="/seo-packages" className="text-gray-200 hover:text-primary transition-colors">- SEO Packages</Link></li>
-              <li><Link href="/ppc-packages" className="text-gray-200 hover:text-primary transition-colors">- PPC Packages</Link></li>
-              <li><Link href="/smo-packages" className="text-gray-200 hover:text-primary transition-colors">- SMO Packages</Link></li>
+              <li><Link href="/packages/aso-plan" className="text-gray-200 hover:text-primary transition-colors">- ASO Plan</Link></li>
+              <li><Link href="/packages/seo-packages" className="text-gray-200 hover:text-primary transition-colors">- SEO Packages</Link></li>
+              <li><Link href="/packages/ppc-packages" className="text-gray-200 hover:text-primary transition-colors">- PPC Packages</Link></li>
+              <li><Link href="/packages/smo-packages" className="text-gray-200 hover:text-primary transition-colors">- SMO Packages</Link></li>
             </ul>
           </div>
           

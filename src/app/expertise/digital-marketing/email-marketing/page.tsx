@@ -5,13 +5,13 @@ import Link from "next/link"
 import { Breadcrumb } from "@/components/ui/Breadcrumb"
 
 export const metadata: Metadata = generateMetadata({
-  title: "SEO Services India | Search Engine Optimization - TrueWeb Technologies",
-  description: "Professional SEO services in India. Our search engine optimization experts improve your website's ranking, increase organic traffic, and boost conversions.",
-  keywords: "SEO services, search engine optimization, SEO agency, digital marketing, website ranking, organic traffic, SEO strategy",
-  pathname: "/expertise/digital-marketing/seo",
+  title: "Email Marketing Services India | Email Campaign Management - TrueWeb Technologies",
+  description: "Professional email marketing services in India. Our email marketing experts create engaging campaigns that drive results. Get high open rates and conversions.",
+  keywords: "email marketing, email campaign, email marketing services, email automation, email templates, newsletter marketing",
+  pathname: "/expertise/digital-marketing/email-marketing",
 })
 
-export default function SEOPage() {
+export default function EmailMarketingPage() {
   return (
     <div className="bg-white dark:bg-gray-950">
       {/* Hero Section */}
@@ -19,8 +19,8 @@ export default function SEOPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/seo.jpg"
-            alt="SEO Hero Background"
+            src="/images/email-marketing.jpg"
+            alt="Email Marketing Hero Background"
             fill
             className="object-cover"
             priority
@@ -35,16 +35,16 @@ export default function SEOPage() {
                 items={[
                   { label: "Home", href: "/" },
                   { label: "Digital Marketing", href: "/expertise/digital-marketing" },
-                  { label: "SEO" }
+                  { label: "Email Marketing" }
                 ]}
                 variant="dark"
               />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Search Engine Optimization
+              Email Marketing Services
             </h1>
             <p className="text-xl mb-8 max-w-2xl">
-              Boost your online visibility and reach your target audience with data-driven SEO strategies
+              Engage your audience with targeted email campaigns that drive results
             </p>
             <Link 
               href="/get-quote" 
@@ -61,10 +61,10 @@ export default function SEOPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Image */}
-            <div>
+            <div className="order-2 lg:order-1">
               <Image
-                src="/images/seo-left.jpg"
-                alt="SEO Services"
+                src="/images/emmar-left.jpg"
+                alt="Email Marketing Services"
                 width={557}
                 height={634}
                 className="w-full h-auto rounded-lg shadow-lg"
@@ -72,28 +72,42 @@ export default function SEOPage() {
             </div>
 
             {/* Right Content */}
-            <div>
+            <div className="order-1 lg:order-2">
               <div className="mb-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                  <span className="text-blue-600">SEO</span>
+                  E-mail <span className="text-blue-600">Marketing</span>
                 </h2>
                 <div className="w-32 h-1 bg-blue-600 mb-6"></div>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  The entire world has become digital today. Internet is playing a very crucial role in people's lives. Whether it's your business idea, or studies or you want to know about any location, the first thing which suddenly clicks in your mind is to ask Google. But have you ever think of that how you get all your answers on Google or any other search engine at a click? How some of the websites appear on the first page of your search where there are so many other competing websites available to answer your search? Well, the only answer will be Search Engine Optimization (SEO).
+                  Want to see optimum engagement of your prospects or clients? If you are nodding your head for yes, Trueweb Technologies will cater your needs well. We build and manage branded e-mail blasts to your prospective customers or clients.
                 </p>
               </div>
 
               <div className="mb-8">
                 <div className="w-32 h-1 bg-orange-500 mb-6"></div>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  With the huge growth of online business, the need of Search Engine Optimization has also increased in last few years. Our modern generation lives on-line and when there is so much demand of it, then how can a businessman remain behind others in this race. So here the need of SEO increases, as all want to win the race by defeating their competitors by coming on the first page of the search engine. In more simple words, SEO is a marketing strategy, being used to improve the ranking of the websites in the search engines.
+                  We believe it calls for great content, catchy headlines and enticing graphics to get your mail noticed in client's e-mail inbox. Our experts create HTML based e-mails with subject lines that convert. Being a worthy e-mail marketing consultants, we consistently achieve above average open rates, click through and are there to build up your subscription based e-mail list.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <div className="w-32 h-1 bg-blue-600 mb-6"></div>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Our e-mail marketing strategies are tried and true that brings life into campaigns and ensures optimum engagement of targeted customers or clients. Beware, posting a blog post alone does not mean your audience gets the message that it's live rather an RSS-fed e-mail sent at the optimal time will assure that your message is noticed.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <div className="w-32 h-1 bg-orange-500 mb-6"></div>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Just program your ESP (E-mail service provider) to work automatically, set it and half of the battle is won. With this, you can make your e-mail marketing smarter than ever. We are there to help you harness these advanced functionalities and let the process go smooth.
                 </p>
               </div>
 
               <div>
                 <div className="w-32 h-1 bg-blue-600 mb-6"></div>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  There are various websites like Facebook, Wikipedia, Twitter and Microsoft which always comes on the first search result page without any help of SEO. But apart from these big brand names, a large number of other websites lose the race. Here SEO plays a very important role in pushing forward these websites. Being a marketing strategy, it has now become an essential part of every business that wants to increase its ranking.
+                  Our e-mail marketing experts optimize your lists, weed out duplicates or inactive subscribers and craft well-designed and engaging e-mails, test subject lines to find the best ones. We try our level best that all the back-end functionality and automations are functioning well. Professionals with us measure, analyze, adjust and use that information to get expected results.
                 </p>
               </div>
             </div>
@@ -132,30 +146,55 @@ export default function SEOPage() {
               <div className="mb-8">
                 <div className="w-32 h-1 bg-blue-600 mb-6"></div>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Gone are the days when, SEO was just a big entrepreneur's cup of tea. With the increasing online business, there is a mushroom growth of SEO companies. Some of the rules have now changed from that time. Some SEO strategies have changed which are presently well accepted by the search engines. The complex SEO has now become simpler due to various tools and social media aids.
+                  In today's e-mail and marketing automation world, lead nurture is another trending topic. Our skilled professionals will help you create the content, build up strategy and do e-mail marketing automation that takes your strategy to the top.
                 </p>
               </div>
 
               <div className="mb-8">
                 <div className="w-32 h-1 bg-orange-500 mb-6"></div>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  First of all, you should be very clear about the need of a SEO for your business. Why are you opting for this service? The only answer which should strike in your mind is huge and huge profit. So, while selecting a SEO company, you should first go through the background of the company and how it can help you in boosting your business. Is this company working on the current guidelines of the Google? All these things are very important, as it will help you in increasing traffic on your website.
+                  No matter, you are looking forward to promote an offer or bringing your brand into notice again, Trueweb Technologies will help you create an out-of-the-box e-mail marketing and automation strategies that will integrate with your website and brand. Our e-mail marketing services includes but are not restricted to-
                 </p>
               </div>
 
-              <div>
-                <div className="w-32 h-1 bg-blue-600 mb-6"></div>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  At Trueweb Technologies, our SEO team is fully trained and works while keeping the success factor in its mind. Using all modern SEO strategies, they help your business achieve its goal.
+              <div className="mb-8">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  We believe content marketing contributes a lot to online, digital and SEO marketing success. Our content marketing services includes:
                 </p>
+                <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    HTML e-mail designs
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Automated marketing and lead nurture
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    RSS-fed e-mails
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Custom e-mail templates
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Subscription based list building
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Reporting and analysis
+                  </li>
+                </ul>
               </div>
             </div>
 
             {/* Right Image */}
             <div>
               <Image
-                src="/images/seo-right.jpg"
-                alt="SEO Strategy"
+                src="/images/emmar-right.jpg"
+                alt="Email Marketing Strategy"
                 width={557}
                 height={634}
                 className="w-full h-auto rounded-lg shadow-lg"
@@ -170,44 +209,44 @@ export default function SEOPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Our SEO Approach
+              Our Email Marketing Approach
             </h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              We implement proven SEO strategies to help your business achieve sustainable growth and increased visibility
+              We deliver comprehensive email marketing strategies that engage your audience and drive conversions
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Technical SEO",
-                description: "We optimize your website's backend to ensure search engines can effectively crawl and index your content",
-                icon: "🔧"
-              },
-              {
-                title: "On-Page Optimization",
-                description: "Strategic optimization of your website's content, meta tags, and structure to improve relevance",
-                icon: "📄"
-              },
-              {
-                title: "Off-Page Strategies",
-                description: "Building high-quality backlinks and establishing online authority to boost your rankings",
-                icon: "🔗"
-              },
-              {
-                title: "Keyword Research",
-                description: "Identifying high-value keywords that your target audience is searching for",
-                icon: "🔍"
-              },
-              {
-                title: "Content Strategy",
-                description: "Creating SEO-optimized content that resonates with your audience and search engines",
-                icon: "📝"
-              },
-              {
-                title: "Performance Analysis",
-                description: "Regular reporting and analytics to track progress and refine your SEO strategy",
+                title: "Strategic Planning",
+                description: "We develop tailored email marketing strategies aligned with your business goals",
                 icon: "📊"
+              },
+              {
+                title: "List Management",
+                description: "We help you build, segment, and maintain high-quality email lists for better targeting",
+                icon: "📋"
+              },
+              {
+                title: "Content Creation",
+                description: "Our team creates compelling email content that resonates with your audience",
+                icon: "✍️"
+              },
+              {
+                title: "Design & Development",
+                description: "We create visually appealing, responsive email templates that work across devices",
+                icon: "🎨"
+              },
+              {
+                title: "Automation & Workflows",
+                description: "Set up automated email sequences to nurture leads and drive conversions",
+                icon: "⚙️"
+              },
+              {
+                title: "Analytics & Optimization",
+                description: "We continuously monitor, analyze, and optimize campaigns for better results",
+                icon: "📈"
               }
             ].map((feature, index) => (
               <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -229,10 +268,10 @@ export default function SEOPage() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              LOOKING FOR A SEO?
+              LOOKING FOR AN EMAIL MARKETING?
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-              Ready to improve your search engine rankings and drive more organic traffic to your website? Let's start a conversation today.
+              Ready to boost your business with effective email marketing campaigns? Let's start a conversation today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/get-quote" className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">
