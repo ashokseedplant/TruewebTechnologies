@@ -34,7 +34,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white py-12 bg-[url('/images/footer-bg.jpg')] bg-cover bg-center dark:border-t dark:border-gray-800">
+    <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white py-12 dark:border-t dark:border-gray-800">
       <div className="container mx-auto px-4">
         {/* Quick Links Row */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-10">
