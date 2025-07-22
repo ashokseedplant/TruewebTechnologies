@@ -1,6 +1,7 @@
 import { generateMetadata } from "@/components/SEO"
 import type { Metadata } from "next"
 import Link from "next/link"
+import { Breadcrumb } from "@/components/ui/Breadcrumb"
 
 export const metadata: Metadata = generateMetadata({
   title: "Our Portfolio",
@@ -16,6 +17,15 @@ export default function PortfoliosPage() {
       <section className="relative pt-24 md:pt-32 pb-16 bg-blue-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center">
+            {/* Add Breadcrumb here */}
+            <Breadcrumb 
+              items={[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about-us" },
+                { label: "Portfolio" }
+              ]}
+              variant="light"
+            />
             <div className="mb-6">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 Our Portfolio

@@ -11,12 +11,13 @@ import {
   Clock,
   Shield,
   Users,
-  DollarSign,
-  Lightbulb
+  Lightbulb,
+  DollarSign
 } from "lucide-react"
+import { Breadcrumb } from "@/components/ui/Breadcrumb"
 
 export const metadata: Metadata = generateMetadata({
-  title: "About TrueWeb Technologies",
+  title: "About TrueWeb Technologies Company | Web Development & Digital Marketing Agency",
   description: "Learn more about TrueWeb Technologies, a leading web development and digital marketing agency focused on innovation, quality and speed.",
   keywords: "about TrueWeb Technologies, web development company, digital marketing agency, app development, web design",
   pathname: "/about-us/company",
@@ -29,6 +30,15 @@ export default function CompanyPage() {
       <section className="relative pt-24 md:pt-32 pb-16 bg-blue-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center">
+            {/* Add Breadcrumb here */}
+            <Breadcrumb 
+              items={[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about-us" },
+                { label: "Company" }
+              ]}
+              variant="light"
+            />
             <div className="mb-6">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 WHO WE ARE
@@ -84,7 +94,10 @@ export default function CompanyPage() {
                   known as Digital Marketing.
                 </p>
                 <div className="text-center">
-                  <Link href="/services/digital-marketing" className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
+                  <Link 
+                    href="/services/digital-marketing" 
+                    className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
+                  >
                     READ MORE
                   </Link>
                 </div>
@@ -108,7 +121,10 @@ export default function CompanyPage() {
                   going to have a tough challenge. No worries! We are here to help.
                 </p>
                 <div className="text-center">
-                  <Link href="/services/web-designing" className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
+                  <Link 
+                    href="/services/web-designing" 
+                    className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
+                  >
                     READ MORE
                   </Link>
                 </div>
@@ -133,7 +149,10 @@ export default function CompanyPage() {
                   with CMS and database.
                 </p>
                 <div className="text-center">
-                  <Link href="/services/development" className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
+                  <Link 
+                    href="/services/development" 
+                    className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
+                  >
                     READ MORE
                   </Link>
                 </div>
@@ -158,7 +177,10 @@ export default function CompanyPage() {
                   Blackberry, Windows and Facebook.
                 </p>
                 <div className="text-center">
-                  <Link href="/services/development/mobile-app-development" className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
+                  <Link 
+                    href="/services/development/mobile-app-development" 
+                    className="inline-block px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
+                  >
                     READ MORE
                   </Link>
                 </div>
@@ -261,7 +283,10 @@ export default function CompanyPage() {
             <p className="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
               Let's discuss how we can help your business grow with our digital solutions.
             </p>
-            <Link href="/contact-us" className="inline-block px-8 py-3 bg-white text-blue-600 font-bold rounded-md hover:bg-gray-100 transition-colors">
+            <Link 
+              href="/contact-us" 
+              className="inline-block px-8 py-3 bg-white text-blue-600 font-bold rounded-md hover:bg-gray-100 transition-colors"
+            >
               Contact Us Today
             </Link>
           </div>

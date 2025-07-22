@@ -2,6 +2,7 @@ import { generateMetadata } from "@/components/SEO"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import { Breadcrumb } from "@/components/ui/Breadcrumb"
 
 export const metadata: Metadata = generateMetadata({
   title: "Digital Marketing Services | Expert Online Marketing Solutions",
@@ -29,17 +30,13 @@ export default function DigitalMarketingPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center text-white">
-            <nav className="mb-6">
-              <ol className="flex items-center space-x-2 text-sm">
-                <li>
-                  <Link href="/" className="text-white hover:text-blue-200 transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li className="text-white">&gt;</li>
-                <li className="text-white font-semibold">Digital Marketing</li>
-              </ol>
-            </nav>
+            <Breadcrumb 
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Digital Marketing" }
+              ]}
+              variant="dark"
+            />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Digital Marketing Services
             </h1>

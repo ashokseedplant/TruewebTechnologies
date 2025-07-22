@@ -2,6 +2,7 @@ import { generateMetadata } from "@/components/SEO"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import { Breadcrumb } from "@/components/ui/Breadcrumb"
 
 export const metadata: Metadata = generateMetadata({
   title: "Content Marketing Services India | Content Marketing Agency - TrueWeb Technologies",
@@ -29,29 +30,21 @@ export default function ContentMarketingPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center text-white">
-            <nav className="mb-6">
-              <ol className="flex items-center space-x-2 text-sm">
-                <li>
-                  <Link href="/" className="text-white hover:text-blue-200 transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li className="text-white">&gt;</li>
-                <li>
-                  <Link href="/expertise/digital-marketing" className="text-white hover:text-blue-200 transition-colors">
-                    Digital Marketing
-                  </Link>
-                </li>
-                <li className="text-white">&gt;</li>
-                <li className="text-white font-semibold">Content Marketing</li>
-              </ol>
-            </nav>
+            <Breadcrumb 
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Digital Marketing", href: "/expertise/digital-marketing" },
+                { label: "Content Marketing" }
+              ]}
+              variant="dark"
+            />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Content Marketing Services
             </h1>
             <p className="text-xl mb-8 max-w-2xl">
               Build brand awareness and engage your audience with compelling content strategies
             </p>
+            {/* Update Link component - remove the <a> tag wrapper */}
             <Link 
               href="/get-quote" 
               className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md transition-colors"
@@ -243,10 +236,17 @@ export default function ContentMarketingPage() {
               Let's discuss how our content marketing expertise can help build your brand authority and engage your target audience effectively.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/get-quote" className="inline-block px-8 py-3 bg-white text-blue-600 font-bold rounded-md hover:bg-gray-100 transition-colors">
+              {/* Update these Link components */}
+              <Link 
+                href="/get-quote" 
+                className="inline-block px-8 py-3 bg-white text-blue-600 font-bold rounded-md hover:bg-gray-100 transition-colors"
+              >
                 Get Free Quote
               </Link>
-              <Link href="/contact-us" className="inline-block px-8 py-3 bg-transparent border-2 border-white text-white font-bold rounded-md hover:bg-white hover:text-blue-600 transition-colors">
+              <Link 
+                href="/contact-us" 
+                className="inline-block px-8 py-3 bg-transparent border-2 border-white text-white font-bold rounded-md hover:bg-white hover:text-blue-600 transition-colors"
+              >
                 Contact Us
               </Link>
             </div>
