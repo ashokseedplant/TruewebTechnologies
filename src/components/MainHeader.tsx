@@ -89,74 +89,107 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Our Expertise</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[600px] gap-3 p-6 md:w-[700px] md:grid-cols-3 lg:w-[800px]">
+                  <div className="grid w-[600px] gap-6 p-6 md:w-[700px] md:grid-cols-3 lg:w-[800px]">
+                    {/* Digital Marketing */}
                     <div>
-                      <h4 className="text-sm font-medium text-primary mb-3">Digital Marketing</h4>
-                      <ListItem href="/digital-marketing/" title="Digital Marketing" icon="megaphone">
-                        Complete digital marketing solutions
-                      </ListItem>
-                      <ListItem href="/content-marketing/" title="Content Marketing" icon="file-text">
-                        Engaging content strategies
-                      </ListItem>
-                      <ListItem href="/email-marketing/" title="Email Marketing" icon="mail">
-                        Effective email campaigns
-                      </ListItem>
-                      <ListItem href="/seo/" title="SEO" icon="search">
-                        Search engine optimization
-                      </ListItem>
-                      <ListItem href="/smo/" title="SMO" icon="users">
-                        Social media optimization
-                      </ListItem>
-                      <ListItem href="/ppc/" title="PPC" icon="dollar-sign">
-                        Pay-per-click advertising
-                      </ListItem>
+                      <div className="mb-2">
+                        <span className="block text-sm font-semibold text-primary">Digital Marketing</span>
+                        <span className="block text-xs text-muted-foreground">Grow your business online</span>
+                      </div>
+                      <NavigationMenuList className="flex flex-col gap-1">
+                        <ListItem href="/digital-marketing/" title="Digital Marketing" icon="megaphone">
+                          Complete digital marketing solutions
+                        </ListItem>
+                        <ListItem href="/content-marketing/" title="Content Marketing" icon="file-text">
+                          Engaging content strategies
+                        </ListItem>
+                        <ListItem href="/email-marketing/" title="Email Marketing" icon="mail">
+                          Effective email campaigns
+                        </ListItem>
+                        <ListItem href="/seo/" title="SEO" icon="search">
+                          Search engine optimization
+                        </ListItem>
+                        <ListItem href="/smo/" title="SMO" icon="users">
+                          Social media optimization
+                        </ListItem>
+                        <ListItem href="/ppc/" title="PPC" icon="dollar-sign">
+                          Pay-per-click advertising
+                        </ListItem>
+                      </NavigationMenuList>
                     </div>
+                    {/* Web Designing */}
                     <div>
-                      <h4 className="text-sm font-medium text-primary mb-3">Web Designing</h4>
-                      <ListItem href="/web-designing/" title="Web Designing" icon="layout">
-                        Creative web design solutions
-                      </ListItem>
-                      <ListItem href="/graphic-design/" title="Graphic Design" icon="image">
-                        Professional graphic design
-                      </ListItem>
-                      <ListItem href="/logo-design/" title="Logo Design" icon="award">
-                        Custom logo design
-                      </ListItem>
-                      <ListItem href="/mobile-website-design/" title="Mobile Website Design" icon="smartphone">
-                        Mobile-friendly designs
-                      </ListItem>
-                      <ListItem href="/responsive-website-design/" title="Responsive Web Design" icon="monitor">
-                        Responsive design solutions
-                      </ListItem>
-                      <ListItem href="/web-page-design/" title="Web Page Design" icon="file">
-                        Custom web page design
-                      </ListItem>
+                      <div className="mb-2">
+                        <span className="block text-sm font-semibold text-primary">Web Designing</span>
+                        <span className="block text-xs text-muted-foreground">Creative & modern designs</span>
+                      </div>
+                      <NavigationMenuList className="flex flex-col gap-1">
+                        <ListItem href="/web-designing/" title="Web Designing" icon="layout">
+                          Creative web design solutions
+                        </ListItem>
+                        <ListItem href="/graphic-design/" title="Graphic Design" icon="image">
+                          Professional graphic design
+                        </ListItem>
+                        <ListItem href="/logo-design/" title="Logo Design" icon="award">
+                          Custom logo design
+                        </ListItem>
+                        <ListItem href="/mobile-website-design/" title="Mobile Website Design" icon="smartphone">
+                          Mobile-friendly designs
+                        </ListItem>
+                        <ListItem href="/responsive-website-design/" title="Responsive Web Design" icon="monitor">
+                          Responsive design solutions
+                        </ListItem>
+                        <ListItem href="/web-page-design/" title="Web Page Design" icon="file">
+                          Custom web page design
+                        </ListItem>
+                        <ListItem href="/ui-ux-design/" title="UI/UX Design" icon="palette">
+                          User interface & experience design
+                        </ListItem>
+                        <ListItem href="/banner-design/" title="Banner Design" icon="image">
+                          Creative banner design
+                        </ListItem>
+                      </NavigationMenuList>
                     </div>
+                    {/* Development & More */}
                     <div>
-                      <h4 className="text-sm font-medium text-primary mb-3">Development & More</h4>
-                      <ListItem href="/web-development/" title="Web Development" icon="code">
-                        Custom web development
-                      </ListItem>
-                      <ListItem href="/php-development/" title="PHP Development" icon="terminal">
-                        PHP web applications
-                      </ListItem>
-                      <ListItem href="/wordpress-development/" title="WordPress Development" icon="wordpress">
-                        WordPress websites
-                      </ListItem>
-                      <ListItem href="/magento-development/" title="Magento Development" icon="shopping-cart">
-                        E-commerce with Magento
-                      </ListItem>
-                      <ListItem href="/e-commerce-website/" title="E-commerce Website" icon="shopping-bag">
-                        Online store development
-                      </ListItem>
-                      <ListItem href="/dot-net-development/" title=".NET Development" icon="cpu">
-                        Microsoft .NET solutions
-                      </ListItem>
-                      <ListItem href="/static-website-development/" title="Static Web Development" icon="file-code">
-                        Fast static websites
-                      </ListItem>
+                      <div className="mb-2">
+                        <span className="block text-sm font-semibold text-primary">Development & More</span>
+                        <span className="block text-xs text-muted-foreground">Web, eCommerce & more</span>
+                      </div>
+                      <NavigationMenuList className="flex flex-col gap-1">
+                        <ListItem href="/web-development/" title="Web Development" icon="code">
+                          Custom web development
+                        </ListItem>
+                        <ListItem href="/php-development/" title="PHP Development" icon="terminal">
+                          PHP web applications
+                        </ListItem>
+                        <ListItem href="/wordpress-development/" title="WordPress Development" icon="globe">
+                          WordPress websites
+                        </ListItem>
+                        <ListItem href="/magento-development/" title="Magento Development" icon="shopping-cart">
+                          E-commerce with Magento
+                        </ListItem>
+                        <ListItem href="/e-commerce-website/" title="E-commerce Website" icon="shopping-bag">
+                          Online store development
+                        </ListItem>
+                        <ListItem href="/dot-net-development/" title=".NET Development" icon="cpu">
+                          Microsoft .NET solutions
+                        </ListItem>
+                        <ListItem href="/static-website-development/" title="Static Web Development" icon="file-code">
+                          Fast static websites
+                        </ListItem>
+                        <ListItem href="/custom-cms-development/" title="Custom CMS Development" icon="layers">
+                          Tailored content management systems
+                        </ListItem>
+                        <ListItem href="/api-development/" title="API Development" icon="link">
+                          API & backend integration
+                        </ListItem>
+                        <ListItem href="/mobile-app-development/" title="Mobile App Development" icon="smartphone">
+                          iOS & Android app solutions
+                        </ListItem>
+                      </NavigationMenuList>
                     </div>
-                  </ul>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
@@ -280,11 +313,14 @@ import {
   File,
   Code,
   Terminal,
-  WordPress,
+  Globe,
   ShoppingCart,
   ShoppingBag,
   Cpu,
-  FileCode
+  FileCode,
+  Palette,
+  Layers,
+  Link as LinkIcon
 } from "lucide-react"
 
 const iconMap: Record<string, React.ElementType> = {
@@ -305,11 +341,14 @@ const iconMap: Record<string, React.ElementType> = {
   file: File,
   code: Code,
   terminal: Terminal,
-  wordpress: WordPress,
+  globe: Globe,
   "shopping-cart": ShoppingCart,
   "shopping-bag": ShoppingBag,
   cpu: Cpu,
-  "file-code": FileCode
+  "file-code": FileCode,
+  palette: Palette,
+  layers: Layers,
+  link: LinkIcon
 }
 
 interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
@@ -318,29 +357,30 @@ interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
   children: React.ReactNode
 }
 
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   ListItemProps
 >(({ className, title, icon, children, ...props }, ref) => {
   const IconComponent = icon ? iconMap[icon] : null
   return (
-    <li>
+    <li className="w-full">
       <NavigationMenuLink asChild>
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-start gap-2",
+            "group flex w-full items-start gap-3 rounded-md p-3 select-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}
         >
-          <div className="flex items-center gap-2">
-            {IconComponent && <IconComponent size={16} className="text-primary shrink-0" />}
+          <span className="flex items-center justify-center min-w-[24px] w-6 h-6 mt-0.5">
+            {IconComponent && <IconComponent size={20} className="text-primary shrink-0" />}
+          </span>
+          <span className="flex flex-col items-start">
             <span className="text-sm font-medium leading-none">{title}</span>
-          </div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
+            <span className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-0.5">{children}</span>
+          </span>
         </a>
       </NavigationMenuLink>
     </li>
