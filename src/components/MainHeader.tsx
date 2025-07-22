@@ -80,14 +80,14 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
                       </li>
                       <li>
                         <NavigationMenuLink asChild>
-                          <ListItem href="/portfolios/" title="Portfolio" icon="briefcase">
+                          <ListItem href="/about-us/portfolios/" title="Portfolio" icon="briefcase">
                             View our successful projects
                           </ListItem>
                         </NavigationMenuLink>
                       </li>
                       <li>
                         <NavigationMenuLink asChild>
-                          <ListItem href="/seo-casestudy/" title="SEO Case Study" icon="bar-chart">
+                          <ListItem href="/about-us/seo-casestudy/" title="SEO Case Study" icon="bar-chart">
                             See our SEO success stories
                           </ListItem>
                         </NavigationMenuLink>
@@ -111,42 +111,42 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
                       <ul className="flex flex-col gap-1">
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/digital-marketing/" title="Digital Marketing" icon="megaphone">
+                            <ListItem href="/expertise/digital-marketing/" title="Digital Marketing" icon="megaphone">
                               Complete digital marketing solutions
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/content-marketing/" title="Content Marketing" icon="file-text">
+                            <ListItem href="/expertise/digital-marketing/content-marketing/" title="Content Marketing" icon="file-text">
                               Engaging content strategies
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/email-marketing/" title="Email Marketing" icon="mail">
+                            <ListItem href="/expertise/digital-marketing/email-marketing/" title="Email Marketing" icon="mail">
                               Effective email campaigns
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/seo/" title="SEO" icon="search">
+                            <ListItem href="/expertise/digital-marketing/seo/" title="SEO" icon="search">
                               Search engine optimization
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/smo/" title="SMO" icon="users">
+                            <ListItem href="/expertise/digital-marketing/smo/" title="SMO" icon="users">
                               Social media optimization
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/ppc/" title="PPC" icon="dollar-sign">
+                            <ListItem href="/expertise/digital-marketing/ppc/" title="PPC" icon="dollar-sign">
                               Pay-per-click advertising
                             </ListItem>
                           </NavigationMenuLink>
@@ -162,56 +162,56 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
                       <ul className="flex flex-col gap-1">
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/web-designing/" title="Web Designing" icon="layout">
+                            <ListItem href="/expertise/web-designing/" title="Web Designing" icon="layout">
                               Creative web design solutions
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/graphic-design/" title="Graphic Design" icon="image">
+                            <ListItem href="/expertise/web-designing/graphic-design/" title="Graphic Design" icon="image">
                               Professional graphic design
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/logo-design/" title="Logo Design" icon="award">
+                            <ListItem href="/expertise/web-designing/logo-design/" title="Logo Design" icon="award">
                               Custom logo design
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/mobile-website-design/" title="Mobile Website Design" icon="smartphone">
+                            <ListItem href="/expertise/web-designing/mobile-website-design/" title="Mobile Website Design" icon="smartphone">
                               Mobile-friendly designs
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/responsive-website-design/" title="Responsive Web Design" icon="monitor">
+                            <ListItem href="/expertise/web-designing/responsive-website-design/" title="Responsive Web Design" icon="monitor">
                               Responsive design solutions
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/web-page-design/" title="Web Page Design" icon="file">
+                            <ListItem href="/expertise/web-designing/web-page-design/" title="Web Page Design" icon="file">
                               Custom web page design
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/ui-ux-design/" title="UI/UX Design" icon="palette">
+                            <ListItem href="/expertise/web-designing/ui-ux-design/" title="UI/UX Design" icon="palette">
                               User interface & experience design
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/banner-design/" title="Banner Design" icon="image">
+                            <ListItem href="/expertise/web-designing/banner-design/" title="Banner Design" icon="image">
                               Creative banner design
                             </ListItem>
                           </NavigationMenuLink>
@@ -227,70 +227,70 @@ const MainHeader = ({ isScrolled, onMobileMenuToggle }: MainHeaderProps) => {
                       <ul className="flex flex-col gap-1">
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/web-development/" title="Web Development" icon="code">
+                            <ListItem href="/expertise/web-development/" title="Web Development" icon="code">
                               Custom web development
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/php-development/" title="PHP Development" icon="terminal">
+                            <ListItem href="/expertise/web-development/php-development/" title="PHP Development" icon="terminal">
                               PHP web applications
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/wordpress-development/" title="WordPress Development" icon="globe">
+                            <ListItem href="/expertise/web-development/wordpress-development/" title="WordPress Development" icon="globe">
                               WordPress websites
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/magento-development/" title="Magento Development" icon="shopping-cart">
+                            <ListItem href="/expertise/web-development/magento-development/" title="Magento Development" icon="shopping-cart">
                               E-commerce with Magento
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/e-commerce-website/" title="E-commerce Website" icon="shopping-bag">
+                            <ListItem href="/expertise/web-development/e-commerce-website/" title="E-commerce Website" icon="shopping-bag">
                               Online store development
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/dot-net-development/" title=".NET Development" icon="cpu">
+                            <ListItem href="/expertise/web-development/dot-net-development/" title=".NET Development" icon="cpu">
                               Microsoft .NET solutions
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/static-website-development/" title="Static Web Development" icon="file-code">
+                            <ListItem href="/expertise/web-development/static-website-development/" title="Static Web Development" icon="file-code">
                               Fast static websites
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/custom-cms-development/" title="Custom CMS Development" icon="layers">
+                            <ListItem href="/expertise/web-development/custom-cms-development/" title="Custom CMS Development" icon="layers">
                               Tailored content management systems
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/api-development/" title="API Development" icon="link">
+                            <ListItem href="/expertise/web-development/api-development/" title="API Development" icon="link">
                               API & backend integration
                             </ListItem>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
-                            <ListItem href="/mobile-app-development/" title="Mobile App Development" icon="smartphone">
+                            <ListItem href="/expertise/web-development/mobile-app-development/" title="Mobile App Development" icon="smartphone">
                               iOS & Android app solutions
                             </ListItem>
                           </NavigationMenuLink>

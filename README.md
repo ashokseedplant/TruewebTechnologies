@@ -9,6 +9,8 @@ A modern recreation of the TrueWeb Technologies website using Next.js, ShadCN UI
 - **Responsive Design**: Fully responsive across all device sizes
 - **Dark Mode Support**: Seamless dark/light mode switching
 - **Mega Menu Navigation**: Advanced dropdown menus with icons and descriptions
+- **SEO Optimized**: Structured URL paths and metadata for better search engine visibility
+- **Redirects System**: Maintains SEO value from old URLs with proper redirects
 - **Performance Optimized**: Fast loading and rendering
 
 ## Structure
@@ -24,7 +26,43 @@ A modern recreation of the TrueWeb Technologies website using Next.js, ShadCN UI
   - Office locations with contact information
   - Payment methods
   - Social media links
-  
+
+- **SEO**: Reusable SEO component for metadata management
+  - Generates appropriate metadata for all pages
+  - Works with Next.js 13 App Router
+  - Supports OpenGraph, Twitter Cards, and canonical URLs
+
+### URL Structure
+
+The website uses a hierarchical URL structure that matches the navigation menu organization:
+
+- `/about-us/` - About Us section
+  - `/about-us/portfolios` - Portfolio examples
+  - `/about-us/seo-casestudy` - SEO case studies
+
+- `/expertise/` - Our Expertise section
+  - `/expertise/digital-marketing/` - Digital Marketing services
+    - `/expertise/digital-marketing/seo` - SEO services
+    - `/expertise/digital-marketing/smo` - Social Media services
+    - `/expertise/digital-marketing/ppc` - PPC services
+    - etc.
+  - `/expertise/web-designing/` - Web Design services
+  - `/expertise/web-development/` - Web Development services
+
+- `/services/` - Other Services section
+  - `/services/content-writing` - Content Writing
+  - `/services/hosting-domain` - Hosting & Domain
+  - etc.
+
+- `/packages/` - Our Packages section
+  - `/packages/seo-packages` - SEO Packages
+  - `/packages/smo-packages` - SMO Packages
+  - etc.
+
+### Redirects System
+
+The website includes a comprehensive redirects system in `next.config.js` to ensure that all old URLs (e.g., `/seo`) properly redirect to their new locations (e.g., `/expertise/digital-marketing/seo`). This maintains SEO value and prevents broken links.
+
 ### Key UI Elements
 
 - **Mega Menu**: Column-based organization for better readability
